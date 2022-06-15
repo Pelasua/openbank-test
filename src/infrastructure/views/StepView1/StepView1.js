@@ -6,11 +6,13 @@ import Title from "../../components/Title/Title";
 import Text from "../../components/Text/Text";
 import svg1 from "../../../assets/img/group.svg";
 import svg2 from "../../../assets/img/group-3.svg";
+import Button from "../../components/Button/Button"
 const StepView1 = () => {
   const { t } = useTranslation();
   return (
     <div className="stepview1">
       <Title titleText={t("stepview1-title")} />
+      <Text text={t("stepview1-overview")} />
       <div className="stepview1__visual-introduction">
         <div className="stepview1__visual-introduction--left">
           <object data={svg1} className="stepview1__image"></object>
@@ -23,6 +25,7 @@ const StepView1 = () => {
       </div>
       <Text subtitle={t("stepview1-subtitle1")} text={t("stepview1-text1")} />
       <Text subtitle={t("stepview1-subtitle2")} text={t("stepview1-text2")} />
+      <Button text={t("button-next")} />
     </div>
   );
 };
