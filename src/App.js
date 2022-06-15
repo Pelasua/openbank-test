@@ -4,6 +4,7 @@ import OpenbankLogo from './assets/img/key_openbank.png';
 import Step1 from "./views/ProductInformation";
 import Step2 from "./views/Form";
 import Step3 from "./views/Feedback";
+import Stepper from './infrastructure/components/Stepper/Stepper';
 
 import "./App.scss";
 
@@ -12,6 +13,7 @@ class App extends Component {
   render() {
       return(
           <div className="App">
+            <Stepper numberOfSteps={3}/>
               <main className="App-content">
                   <h1>Bienvenid@ al test de <img src={OpenbankLogo} className="App-header-logo" alt={"openbank-logo"} /></h1>
                   <h3>Objetivo </h3>
