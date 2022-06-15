@@ -1,0 +1,11 @@
+@import "../../../styles/base";
+
+.button {
+    padding: 15px 20px;
+    background-color: $secondary-color;
+    color: $white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+}
