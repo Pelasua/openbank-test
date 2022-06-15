@@ -1,6 +1,9 @@
 {
+    "stepview1-title": "Te damos la bienvenida a Cuenta Corriente OpenClose",
     "stepview1-subtitle1": "Como funciona",
     "stepview1-text1" : "En primer lugar, debes crear una contraseña diferente para sus pertenencias electrónicas. No podrás recuperar tu contraseña. así que recuérdala bien.",
     "stepview1-subtitle2": "Qué se necesita",
-    "stepview1-text2": "Debes aceptar nuestras condiciones acerca del uso y manejo de datos personales. Si estás de acuerdo, activa el siguiente check, y procede al paso siguiente."
+    "stepview1-text2": "Debes aceptar nuestras condiciones acerca del uso y manejo de datos personales. Si estás de acuerdo, activa el siguiente check, y procede al paso siguiente.",
+    "stepview1-visual-introduction-left": "Guarda aquí todas tus contraseñas, datos o cualquier información, olvida las notas de papeñ y las aplicaciones no protegidas.",
+    "stepview1-visual-introduction-right": "Crea tu clave maestra: solo tú podrás acceder a tus secretos con ella."
 }

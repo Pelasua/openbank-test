@@ -6,7 +6,7 @@ import Step1 from "./views/ProductInformation";
 import Step2 from "./views/Form";
 import Step3 from "./views/Feedback";
 import Stepper from "./infrastructure/components/Stepper/Stepper";
-import Text from "./infrastructure/components/Text/Text";
+import StepView1 from "./infrastructure/views/StepView1/StepView1";
 
 import "./App.scss";
 
@@ -15,7 +15,7 @@ const { t } = useTranslation();
   return (
     <div className="App">
       <Stepper numberOfSteps={3} />
-      <Text subtitle={t('stepview1-subtitle1')} text={"Esto es una prueba"} />
+      <StepView1 />
       <main className="App-content">
         <h1>
           Bienvenid@ al test de{" "}
