@@ -5,8 +5,7 @@ import OpenbankLogo from "./assets/img/key_openbank.png";
 import Step1 from "./views/ProductInformation";
 import Step2 from "./views/Form";
 import Step3 from "./views/Feedback";
-import Stepper from "./infrastructure/components/Stepper/Stepper";
-import StepView1 from "./infrastructure/views/StepView1/StepView1";
+import MainView from "./infrastructure/views/MainView/MainView";
 
 import "./App.scss";
 
@@ -14,8 +13,7 @@ function App() {
 const { t } = useTranslation();
   return (
     <div className="App">
-      <Stepper numberOfSteps={3} />
-      <StepView1 />
+      <MainView />
       <main className="App-content">
         <h1>
           Bienvenid@ al test de{" "}
