@@ -1,0 +1,19 @@
+@import "../../../styles/base";
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    color: $secondary-color;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 50px;
+        height: 4px;
+        background-color: $turquoise;
+        position: absolute;
+        left: 0;
+        top: calc(100% + 8px);
+        border-radius: 10%;
+    }
+}
