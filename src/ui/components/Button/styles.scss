@@ -6,6 +6,23 @@
     color: $white;
     font-family: inherit;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 3px;
+
+    &--default{
+        background-color: $secondary-color;
+        color: $white;
+    }
+
+    &--light{
+        background-color: transparent; 
+        border-color: transparent; 
+        color: $secondary-color;
+    }
+
+    &--light{
+        background-color: transparent; 
+        border-color: transparent; 
+        color: $secondary-color;
+    }
 }

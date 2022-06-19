@@ -1,6 +1,5 @@
 import React from "react";
 import "./i18n/config";
-import { useTranslation } from "react-i18next";
 import OpenbankLogo from "./assets/img/key_openbank.png";
 import Step1 from "./views/ProductInformation";
 import Step2 from "./views/Form";
@@ -10,7 +9,7 @@ import MainView from "./ui/views/MainView";
 import "./App.scss";
 
 function App() {
-const { t } = useTranslation();
+
   return (
     <div className="App">
       <MainView />
