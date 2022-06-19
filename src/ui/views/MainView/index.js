@@ -1,6 +1,6 @@
-import "./MainView.scss";
-import StepView1 from "../StepView1/StepView1";
-import Stepper from "../../components/Stepper/Stepper";
+import "./styles.scss";
+import StepView1 from "../StepView1";
+import Stepper from "../../components/Stepper";
 const MainView = () => {
   return (
     <div className="mainview">

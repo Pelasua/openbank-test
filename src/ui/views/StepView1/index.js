@@ -1,12 +1,12 @@
-import "./StepView1.scss";
+import "./styles.scss";
 import React from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
-import Title from "../../components/Title/Title";
-import Text from "../../components/Text/Text";
+import Title from "../../components/Title";
+import Text from "../../components/Text";
 import svg1 from "../../../assets/img/group.svg";
 import svg2 from "../../../assets/img/group-3.svg";
-import Button from "../../components/Button/Button"
+import Button from "../../components/Button"
 const StepView1 = () => {
   const { t } = useTranslation();
   return (

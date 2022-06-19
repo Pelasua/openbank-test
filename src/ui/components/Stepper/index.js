@@ -1,6 +1,6 @@
-import "./Stepper.scss";
+import "./styles.scss";
 import React from "react";
-import Step from "../Step/Step";
+import Step from "../Step";
 import PropTypes from "prop-types";
 
 const Stepper = ({ numberOfSteps }) => {

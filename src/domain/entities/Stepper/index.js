@@ -1,3 +1,3 @@
 export const stepperState =  {
-    totalSteps: null,
+    totalSteps: 0,
 }
