@@ -6,3 +6,7 @@ export const getClassByType = (type) => {
   };
   return type in types ? types[type] : types["default"];
 };
+
+export const handleClickButton = () => {
+  
+}
