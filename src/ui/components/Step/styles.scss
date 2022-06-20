@@ -34,22 +34,33 @@
         clear: both;
       }
     }
+
+    &--checked {
+      opacity: 1;
+      background-color: $primary-color;
+    }
   }
 
-  &:not(:first-child) {
+  &:not(:last-child) {
     width: 90px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 
-  &:not(:first-child) > &__number {
+  &:not(:last-child) > &__number {
     &::before {
       content: "";
       width: 50px;
       height: 3px;
       position: absolute;
-      right: 100%;
-      background-color: inherit;
+      left: 100%;
+      background-color: $secondary-color;
+      opacity: 0.5;
+    }
+
+    &--checked::before {
+      background-color: $primary-color;
+      opacity: 1;
     }
   }
 }
