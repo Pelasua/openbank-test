@@ -1,29 +1,38 @@
-import {initialState} from "../../../domain/entities/Button"
+import {
+  initialState,
+  buttonTypes,
+  interactionTypes,
+} from "../../../domain/entities/Button";
 
 export const getClassByType = (type) => {
-  const types = {
-    default: "button--default",
-    light: "button--light",
-    "light-pink": "button--light-pink",
-  };
-  return type in types ? types[type] : types["default"];
+  return type in buttonTypes ? buttonTypes[type] : buttonTypes["default"];
 };
-
 
 export const buttonClickReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "@app/buttonClicked":
+    case "@app/cancelButtonClicked":
       return {
         ...state,
         isClicked: !state.isClicked,
+        interaction: "cancel",
+      };
+    case "@app/continueButtonClicked":
+      return {
+        ...state,
+        isClicked: !state.isClicked,
+        interaction: "continue",
       };
     default:
       return state;
   }
 };
 
-export const handleButtonClick = () => {
+export const handleButtonClick = (interactionType) => {
   return {
-    type: "@app/buttonClicked",
+    type: `@app/${
+      interactionTypes[interactionType]
+        ? interactionTypes[interactionType]
+        : interactionTypes["default "]
+    }`,
   };
 };

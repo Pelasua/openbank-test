@@ -10,8 +10,8 @@ import BottomInteractions from "../../components/BottomInteractions";
 const StepView1 = () => {
   const { t } = useTranslation();
   const buttons = [
-    { text: t("button-cancel"), type: "light" },
-    { text: t("button-next") },
+    { text: t("button-cancel"), type: "light",interactionType: "cancel" },
+    { text: t("button-next"), interactionType: "continue" },
   ];
   return (
     <div className="stepview1">

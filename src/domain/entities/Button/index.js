@@ -1,9 +1,17 @@
 export const initialState = {
-    isDisabled: false,
-    isClicked: false
-}
+  isDisabled: false,
+  isClicked: false,
+  interaction: "",
+};
 
-export const interactionDataAttributes = {
-    'continue': 'data-btn-continue',
-    'cancel': 'data-btn-cancel',
-}
+export const buttonTypes = {
+  default: "button--default",
+  light: "button--light",
+  "light-pink": "button--light-pink",
+};
+
+export const interactionTypes = {
+  continue: "continueButtonClicked",
+  cancel: "cancelButtonClicked",
+  default: "noInteraction",
+};

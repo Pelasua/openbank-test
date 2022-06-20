@@ -7,7 +7,7 @@ import {
 } from "../../../application/actions/Button";
 import { useDispatch } from "react-redux";
 
-const Button = ({ text, type, isDisabled }) => {
+const Button = ({ text, type, interactionType, isDisabled }) => {
   const typeClass = getClassByType(type);
   const dispatch = useDispatch();
   return (
@@ -15,7 +15,7 @@ const Button = ({ text, type, isDisabled }) => {
       <button
         className={`button ${typeClass}`}
         disabled={isDisabled}
-        onClick={() => dispatch(handleButtonClick())}
+        onClick={() => dispatch(handleButtonClick(interactionType))}
       >
         {" "}
         {text}{" "}
