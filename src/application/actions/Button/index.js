@@ -1,3 +1,5 @@
+import {initialState} from "../../../domain/entities/Button"
+
 export const getClassByType = (type) => {
   const types = {
     default: "button--default",
@@ -7,6 +9,21 @@ export const getClassByType = (type) => {
   return type in types ? types[type] : types["default"];
 };
 
-export const handleClickButton = () => {
-  
-}
+
+export const buttonClickReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "@app/buttonClicked":
+      return {
+        ...state,
+        isClicked: !state.isClicked,
+      };
+    default:
+      return state;
+  }
+};
+
+export const handleButtonClick = () => {
+  return {
+    type: "@app/buttonClicked",
+  };
+};

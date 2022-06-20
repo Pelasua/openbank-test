@@ -5,13 +5,13 @@ import Step1 from "./views/ProductInformation";
 import Step2 from "./views/Form";
 import Step3 from "./views/Feedback";
 import MainView from "./ui/views/MainView";
-
 import "./App.scss";
 
 function App() {
 
   return (
     <div className="App">
+
       <MainView />
       <main className="App-content">
         <h1>
