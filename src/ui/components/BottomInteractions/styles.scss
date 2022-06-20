@@ -1,0 +1,9 @@
+@import "../../../styles/base";
+
+.bottom-interactions {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    border-top: 1px solid $gray;
+    padding: 20px 0;
+}

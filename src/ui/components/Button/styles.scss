@@ -1,28 +1,32 @@
 @import "../../../styles/base";
 
 .button {
-    padding: 15px 20px;
+   
     background-color: $secondary-color;
     color: $white;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     border-radius: 3px;
+    border-color: transparent;
 
     &--default{
         background-color: $secondary-color;
         color: $white;
+        padding: 15px 20px;
     }
 
     &--light{
         background-color: transparent; 
         border-color: transparent; 
         color: $secondary-color;
+        padding: 0;
     }
 
     &--light-pink{
         background-color: transparent; 
         border-color: transparent; 
         color: $primary-color;
+        padding: 0;
     }
 }
