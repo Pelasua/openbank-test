@@ -7,5 +7,6 @@
     "stepview1-text2": "Debes aceptar nuestras condiciones acerca del uso y manejo de datos personales. Si estás de acuerdo, activa el siguiente check, y procede al paso siguiente.",
     "stepview1-visual-introduction-left": "Guarda aquí todas tus contraseñas, datos o cualquier información, olvida las notas de papeñ y las aplicaciones no protegidas.",
     "stepview1-visual-introduction-right": "Crea tu clave maestra: solo tú podrás acceder a tus secretos con ella.",
-    "button-next": "Siguiente >"
+    "button-next": "Siguiente >",
+    "button-cancel": "Cancelar"
 }

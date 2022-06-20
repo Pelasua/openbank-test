@@ -6,9 +6,13 @@ import Title from "../../components/Title";
 import Text from "../../components/Text";
 import svg1 from "../../../assets/img/group.svg";
 import svg2 from "../../../assets/img/group-3.svg";
-import Button from "../../components/Button"
+import BottomInteractions from "../../components/BottomInteractions";
 const StepView1 = () => {
   const { t } = useTranslation();
+  const buttons = [
+    { text: t("button-cancel"), type: "light" },
+    { text: t("button-next") },
+  ];
   return (
     <div className="stepview1">
       <Title titleText={t("stepview1-title")} />
@@ -25,7 +29,8 @@ const StepView1 = () => {
       </div>
       <Text subtitle={t("stepview1-subtitle1")} text={t("stepview1-text1")} />
       <Text subtitle={t("stepview1-subtitle2")} text={t("stepview1-text2")} />
-      <Button text={t("button-next")} />
+
+      <BottomInteractions buttons={buttons} />
     </div>
   );
 };

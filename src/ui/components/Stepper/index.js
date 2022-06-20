@@ -8,7 +8,7 @@ const Stepper = ({ numberOfSteps }) => {
     <div className="stepper">
       <ul className="stepper__steplist">
         {[...Array(numberOfSteps)].map((x, index) => (
-          <Step key={x} stepPosition={index} />
+          <Step key={index.toString()} stepPosition={index} />
         ))}
       </ul>
     </div>
